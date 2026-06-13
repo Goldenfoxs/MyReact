@@ -1,3 +1,7 @@
+/* html{
+  background-color: green;
+} */
+
 .App {
   text-align: center;
   background-color: green;
@@ -17,3 +21,10 @@
 ul li{
   font-size: 25px;
 } 
+
+.total-items{
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-decoration: underline;
+}

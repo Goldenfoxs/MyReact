@@ -2,8 +2,8 @@ import React, {useState} from "react";
 // import myImg from "./images/trash.svg"
 
 
-export const Content = () => {
-    const [items, setItems] = useState(JSON.parse(localStorage.getItem("savelist")) || [] );
+export const Content = ({items, setItems, handleCheck, handleDelete}) => {
+    // const [items, setItems] = useState(JSON.parse(localStorage.getItem("savelist")) || [] );
 
     // const [items, setItems] = useState([
     //     {
@@ -37,22 +37,21 @@ export const Content = () => {
 
 
 
-    const handleCheck = (id) => {
-        const listItems = items.map((item) => item.id === id ? {...item, checked: !item.checked} : item);
-        setItems(listItems);
-        // console.log(id);
+    // const handleCheck = (id) => {
+    //     const listItems = items.map((item) => item.id === id ? {...item, checked: !item.checked} : item);
+    //     setItems(listItems);
 
-        localStorage. setItem("savelist", JSON.stringify(listItems));
-    }
+    //     localStorage. setItem("savelist", JSON.stringify(listItems));
+    // }
 
-    const handleDelete = (id) => {
-        const listItems = items.filter((item) => item.id !== id);
-        setItems(listItems);
-    }
+    // const handleDelete = (id) => {
+    //     const listItems = items.filter((item) => item.id !== id);
+    //     setItems(listItems);
+    // }
 
     return (
         <main className="content">
-            <h2>Content</h2>
+            <h2 id="Text">Content</h2>
             {items.length ? (
                 <ul>
                 {items.map((item) => (

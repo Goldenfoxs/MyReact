@@ -1,0 +1,36 @@
+.container{
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+li {
+    list-style: none;
+}
+
+.inner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 30px 130px;
+    background-color: blue;
+    margin: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    opacity: 0.8;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+}
+
+.link:hover{
+    color: red;
+}
+
+.main_header{
+    padding-top: 93px;
+}
